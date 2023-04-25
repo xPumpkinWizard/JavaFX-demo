@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="360.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxdemo.SceneController">
+   <children>
+      <Separator layoutY="560.0" prefWidth="360.0">
+         <cursor>
+            <Cursor fx:constant="SW_RESIZE" />
+         </cursor>
+      </Separator>
+      <Separator layoutY="468.0" prefWidth="360.0">
+         <cursor>
+            <Cursor fx:constant="SW_RESIZE" />
+         </cursor>
+      </Separator>
+      <Label fx:id="exercise1" layoutX="1.0" layoutY="159.0" text="Ecercises 1" textFill="RED" />
+      <Label fx:id="exercise2" layoutY="249.0" text="Ecercises 2" textFill="RED" />
+      <Label fx:id="exercise3" layoutY="333.0" text="Ecercises 3" textFill="RED" />
+      <Label fx:id="exercise4" layoutY="419.0" prefWidth="63.0" text="Ecercises 4" textFill="RED" />
+      <Label fx:id="exercise5" layoutY="505.0" text="Ecercises 5" textFill="RED" />
+      <Button layoutX="301.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToScene2" text="Back" />
+      <Label fx:id="d5" layoutX="101.0" layoutY="469.0" prefHeight="88.0" prefWidth="245.0" text="Label&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;" />
+      <Label fx:id="d4" layoutX="101.0" layoutY="383.0" prefHeight="88.0" prefWidth="245.0" text="Label&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;" />
+      <Label fx:id="d3" layoutX="101.0" layoutY="297.0" prefHeight="88.0" prefWidth="245.0" text="Label&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;" />
+      <Label fx:id="d2" layoutX="101.0" layoutY="213.0" prefHeight="88.0" prefWidth="245.0" text="Label&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;" />
+      <Label fx:id="d1" layoutX="101.0" layoutY="123.0" prefHeight="88.0" prefWidth="245.0" text="Label&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;" />
+      <Separator layoutY="382.0" prefWidth="360.0">
+         <cursor>
+            <Cursor fx:constant="SW_RESIZE" />
+         </cursor>
+      </Separator>
+      <Separator layoutY="296.0" prefWidth="360.0">
+         <cursor>
+            <Cursor fx:constant="SW_RESIZE" />
+         </cursor>
+      </Separator>
+      <Separator layoutY="212.0" prefWidth="360.0">
+         <cursor>
+            <Cursor fx:constant="SW_RESIZE" />
+         </cursor>
+      </Separator>
+      <Separator layoutY="122.0" prefWidth="360.0">
+         <cursor>
+            <Cursor fx:constant="SW_RESIZE" />
+         </cursor>
+      </Separator>
+   </children>
+</AnchorPane>
