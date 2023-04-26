@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Tab?>
@@ -10,117 +11,130 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="340.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxdemo.SceneController">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="340.0" style="-fx-background-color: #EAF4D3;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxdemo.SceneController">
    <children>
-      <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
-        <tabs>
-          <Tab text="Equipment">
-            <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                     <children>
-                        <Label layoutX="14.0" layoutY="6.0" text="Select Equipment&#10;Pick the equipment you have">
-                           <font>
-                              <Font size="14.0" />
-                           </font>
-                        </Label>
-                        <ImageView fx:id="image6" fitHeight="60.0" fitWidth="86.0" layoutX="98.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../../weight-lifting.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView fx:id="image5" fitHeight="60.0" fitWidth="86.0" layoutX="14.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../../treadmill.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView fx:id="image4" fitHeight="60.0" fitWidth="86.0" layoutX="266.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../../skipping-rope.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView fx:id="image3" fitHeight="60.0" fitWidth="86.0" layoutX="183.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../../kettlebell.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView fx:id="image2" fitHeight="60.0" fitWidth="86.0" layoutX="98.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../../fitness.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView fx:id="image1" fitHeight="60.0" fitWidth="86.0" layoutX="14.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../../chest-press.png" />
-                           </image>
-                        </ImageView>
-                        <ToggleButton fx:id="treadTb" layoutX="8.0" layoutY="256.0" mnemonicParsing="false" onAction="#toggleButton" prefHeight="26.0" prefWidth="74.0" text="Treadmill" />
-                        <ToggleButton fx:id="benchTb" layoutX="91.0" layoutY="256.0" mnemonicParsing="false" onAction="#toggleButton" prefHeight="26.0" prefWidth="74.0" text="Bench" />
-                        <ToggleButton fx:id="weightsTb" layoutX="176.0" layoutY="144.0" mnemonicParsing="false" onAction="#toggleButton" prefHeight="26.0" prefWidth="74.0" text="Weights" />
-                        <ToggleButton fx:id="ropeTb" layoutX="259.0" layoutY="144.0" mnemonicParsing="false" onAction="#toggleButton" prefHeight="26.0" prefWidth="74.0" text="Rope" />
-                        <ToggleButton fx:id="latPullTb" layoutX="91.0" layoutY="144.0" mnemonicParsing="false" onAction="#toggleButton" prefHeight="26.0" prefWidth="74.0" text="Lat Pull" />
-                        <ToggleButton fx:id="chestPressTb" layoutX="3.0" layoutY="144.0" mnemonicParsing="false" onAction="#toggleButton" prefHeight="26.0" prefWidth="83.0" text="Chest Press" />
-                     </children>
-                  </AnchorPane>
-            </content>
-          </Tab>
-          <Tab text="Muscle Groups">
-            <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                     <children>
-                        <Label layoutX="14.0" layoutY="14.0" text="Select body parts you want to train, &#10;they will turn red when selected" />
-                        <ImageView fx:id="imageCore" fitHeight="83.0" fitWidth="128.0" layoutX="29.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../../abs.png" />
-                           </image></ImageView>
-                        <ImageView fx:id="imageLegs" fitHeight="83.0" fitWidth="128.0" layoutX="224.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../../quadricep.png" />
-                           </image></ImageView>
-                        <ImageView fx:id="imageBack" fitHeight="83.0" fitWidth="128.0" layoutX="29.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../../back.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView fx:id="imageArms" fitHeight="83.0" fitWidth="128.0" layoutX="225.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../../muscle.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView fx:id="imageChest" fitHeight="83.0" fitWidth="128.0" layoutX="29.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../../body.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView fx:id="imageShoulder" fitHeight="83.0" fitWidth="128.0" layoutX="224.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../../shoulder.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView fx:id="imageBody" fitHeight="83.0" fitWidth="128.0" layoutX="29.0" layoutY="470.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../../user.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView fx:id="imageCardio" fitHeight="83.0" fitWidth="128.0" layoutX="225.0" layoutY="470.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../../running-man.png" />
-                           </image>
-                        </ImageView>
-                        <Button fx:id="nextButton" layoutX="280.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToScene3" text="Next" />
-                        <CheckBox fx:id="core" layoutX="46.0" layoutY="61.0" mnemonicParsing="false" onAction="#tbMucles" text="Core" />
-                        <CheckBox fx:id="legs" layoutX="240.0" layoutY="61.0" mnemonicParsing="false" onAction="#tbMucles" text="Legs" />
-                        <CheckBox fx:id="back" layoutX="46.0" layoutY="182.0" mnemonicParsing="false" onAction="#tbMucles" text="Back" />
-                        <CheckBox fx:id="arms" layoutX="241.0" layoutY="182.0" mnemonicParsing="false" onAction="#tbMucles" text="Arms" />
-                        <CheckBox fx:id="chest" layoutX="46.0" layoutY="304.0" mnemonicParsing="false" onAction="#tbMucles" text="Chest" />
-                        <CheckBox fx:id="shoulder" layoutX="226.0" layoutY="313.0" mnemonicParsing="false" onAction="#tbMucles" text="Shoulders" />
-                        <CheckBox fx:id="body" layoutX="46.0" layoutY="435.0" mnemonicParsing="false" onAction="#tbMucles" text="Full Body" />
-                        <CheckBox fx:id="cardio" layoutX="229.0" layoutY="435.0" mnemonicParsing="false" onAction="#tbMucles" text="Cardio" />
-                     </children></AnchorPane>
-            </content>
-          </Tab>
-        </tabs>
-      </TabPane>
+      <VBox prefHeight="640.0" prefWidth="360.0">
+         <children>
+            <TabPane prefHeight="640.0" prefWidth="340.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Equipment">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="6.0" text="Select Equipment&#10;Pick the equipment you have">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fx:id="image6" fitHeight="60.0" fitWidth="86.0" layoutX="98.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../weight-lifting.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="image5" fitHeight="60.0" fitWidth="86.0" layoutX="14.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../treadmill.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="image4" fitHeight="60.0" fitWidth="86.0" layoutX="266.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../skipping-rope.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="image3" fitHeight="60.0" fitWidth="86.0" layoutX="183.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../kettlebell.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="image2" fitHeight="60.0" fitWidth="86.0" layoutX="98.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../fitness.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="image1" fitHeight="60.0" fitWidth="86.0" layoutX="14.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../chest-press.png" />
+                                 </image>
+                              </ImageView>
+                              <ToggleButton fx:id="treadTb" layoutX="8.0" layoutY="256.0" mnemonicParsing="false" onAction="#toggleButton" prefHeight="26.0" prefWidth="74.0" text="Treadmill" />
+                              <ToggleButton fx:id="benchTb" layoutX="91.0" layoutY="256.0" mnemonicParsing="false" onAction="#toggleButton" prefHeight="26.0" prefWidth="74.0" text="Bench" />
+                              <ToggleButton fx:id="weightsTb" layoutX="176.0" layoutY="144.0" mnemonicParsing="false" onAction="#toggleButton" prefHeight="26.0" prefWidth="74.0" text="Weights" />
+                              <ToggleButton fx:id="ropeTb" layoutX="259.0" layoutY="144.0" mnemonicParsing="false" onAction="#toggleButton" prefHeight="26.0" prefWidth="74.0" text="Rope" />
+                              <ToggleButton fx:id="latPullTb" layoutX="91.0" layoutY="144.0" mnemonicParsing="false" onAction="#toggleButton" prefHeight="26.0" prefWidth="74.0" text="Lat Pull" />
+                              <ToggleButton fx:id="chestPressTb" layoutX="3.0" layoutY="144.0" mnemonicParsing="false" onAction="#toggleButton" prefHeight="26.0" prefWidth="83.0" text="Chest Press" />
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Muscle Groups">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="14.0" text="Select body parts you want to train, &#10;they will turn red when selected" />
+                              <ImageView fx:id="imageCore" fitHeight="83.0" fitWidth="128.0" layoutX="29.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../abs.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="imageLegs" fitHeight="83.0" fitWidth="128.0" layoutX="224.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../quadricep.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="imageBack" fitHeight="83.0" fitWidth="128.0" layoutX="29.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../back.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="imageArms" fitHeight="83.0" fitWidth="128.0" layoutX="225.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../muscle.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="imageChest" fitHeight="83.0" fitWidth="128.0" layoutX="29.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../body.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="imageShoulder" fitHeight="83.0" fitWidth="128.0" layoutX="224.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../shoulder.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="imageBody" fitHeight="83.0" fitWidth="128.0" layoutX="29.0" layoutY="470.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../user.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="imageCardio" fitHeight="83.0" fitWidth="128.0" layoutX="225.0" layoutY="470.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../running-man.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="nextButton" layoutX="280.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToScene3" text="Next" />
+                              <CheckBox fx:id="core" layoutX="46.0" layoutY="61.0" mnemonicParsing="false" onAction="#tbMucles" text="Core" />
+                              <CheckBox fx:id="legs" layoutX="240.0" layoutY="61.0" mnemonicParsing="false" onAction="#tbMucles" text="Legs" />
+                              <CheckBox fx:id="back" layoutX="46.0" layoutY="182.0" mnemonicParsing="false" onAction="#tbMucles" text="Back" />
+                              <CheckBox fx:id="arms" layoutX="241.0" layoutY="182.0" mnemonicParsing="false" onAction="#tbMucles" text="Arms" />
+                              <CheckBox fx:id="chest" layoutX="46.0" layoutY="304.0" mnemonicParsing="false" onAction="#tbMucles" text="Chest" />
+                              <CheckBox fx:id="shoulder" layoutX="226.0" layoutY="313.0" mnemonicParsing="false" onAction="#tbMucles" text="Shoulders" />
+                              <CheckBox fx:id="body" layoutX="46.0" layoutY="435.0" mnemonicParsing="false" onAction="#tbMucles" text="Full Body" />
+                              <CheckBox fx:id="cardio" layoutX="229.0" layoutY="435.0" mnemonicParsing="false" onAction="#tbMucles" text="Cardio" />
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+            <ButtonBar prefHeight="40.0" prefWidth="200.0">
+              <buttons>
+                <Button mnemonicParsing="false" onAction="#switchToScene1" text="Home" />
+              </buttons>
+            </ButtonBar>
+         </children>
+      </VBox>
    </children>
 </StackPane>

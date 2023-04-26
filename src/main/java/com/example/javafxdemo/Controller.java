@@ -1,10 +1,12 @@
 package com.example.javafxdemo;
 
+import javafx.animation.FadeTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.util.Duration;
 
 import javax.crypto.BadPaddingException;
 import javax.crypto.IllegalBlockSizeException;
@@ -65,6 +67,10 @@ public class Controller extends SceneController{
             switchToScene2(event);
         } else {
             errorField.setVisible(true);
+            FadeTransition fadeTransition = new FadeTransition(Duration.seconds(3),errorField);
+            fadeTransition.setFromValue(1.0);
+            fadeTransition.setToValue(0);
+            fadeTransition.play();
         }
     }
 
