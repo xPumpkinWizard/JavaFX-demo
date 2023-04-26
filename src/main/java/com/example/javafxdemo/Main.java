@@ -15,6 +15,7 @@ public class Main extends Application {
         try {
 
             Parent root = FXMLLoader.load(getClass().getResource("Scene1.fxml"));
+            stage.setTitle("Vital Fitness");
             Scene scene = new Scene(root);
             stage.setScene(scene);
             Image myImage = new Image("dumbbell.png");
